@@ -67,13 +67,9 @@ public class Animal {
     }
 
     public static String totalPorTipo(){
-        String mensaje = "Mamíferos: " + 4 +"\n" + "Aves: " + 4 + "\n" + "Reptiles: " + 2 + "\n" + "Peces: " + 2 + "\n" + "Anfibios: " + 3;
+        String mensaje = "Mamiferos: " + Mamifero.listado.size() +"\n" + "Aves: " + Ave.listado.size() + "\n" + "Reptiles: " + Reptil.listado.size() + "\n" + "Peces: " + Pez.listado.size() + "\n" + "Anfibios: " + Anfibio.listado.size();
         return mensaje;
     }
-    // El test está mal ya que espera que deben haber 4 mamiferos, 4 aves, 2 reptiles, 2 peces y 3 anfibios cuando en realidad solo se estan creando 2 anfibios, 3 mamiferos, 1 reptil, 1 pez y 2 aves.
-    // Por lo tanto ajusté los valores para que correspondieran con los del test ya que no puedo modificar el test porque me bajan la nota
-    // Lo que debería de ir en vez de los números es lo siguiente: String mensaje = "Mamíferos: " + Mamifero.listado.size() +"\n" + "Aves: " + Ave.listado.size() + "\n" + "Reptiles: " + Reptil.listado.size() + "\n" + "Peces: " + Pez.listado.size() + "\n" + "Anfibios: " + Anfibio.listado.size();
-    // No se si ustedes van a revisar el código realmente. Así que espero que comprendan eso y no me bajen la nota :)
 
     @Override
     public String toString(){
